@@ -656,6 +656,7 @@ main {
     }
     .social_media {
         margin-bottom: 20px;
+        justify-content: center;
     }
     .illustration-intro-image, .stay_prudactive_image {
         width: 80%;
