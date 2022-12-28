@@ -623,6 +623,9 @@ main {
     #early_access_p {
         width: 97%;
     }
+    .early_access h1 {
+        width: 80%;
+    }
     .input_email_and_button {
         width: 100%;
         display: grid;
@@ -719,6 +722,14 @@ main {
     }
     #nav_bar_bottom_option {
         border-top: 1px solid grey;
+    }
+}
+@media only screen and (max-width: 506px) {
+    .early_access {
+        height: 325px;
+    }
+    .footer_contact_section {
+        margin-top: 60px;
     }
 }
 @media only screen and (max-width: 485px) {
