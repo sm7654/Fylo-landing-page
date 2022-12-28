@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/81535ba2d6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./design/style.css">
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color:hsl(176, 68%, 64%); }
+  </style>
+</head>
+<body>
+
+  <a href="#"><button class="go_up"><img src="./images/arrow-up-solid.svg" loading="lazy" style="width: 20px; height: 20px;"></button></a>
+
+
+
+  <header>
+    <nav>
+      <a href="#"><img src="./images/logo.svg" alt="Fylo logo" style="width: 165px; cursor: pointer;" loading="lazy"></a>
+      <ul class="ul_header">
+        <li class="li_haeder">Features</li>
+        <li class="li_haeder">Team</li>
+        <li class="li_haeder">Sign In</li>
+      </ul>
+      <img src="./images/menu.png" alt="nav bar" onclick="bar_clicked()" class="div_bars" style="width: 30px; height: 30px;">
+    </nav>
+  </header>
+
+  <ul class="ul_responsive" id="ul_responsive">
+    <li class="li_haeder_responsive" id="nav_bar_top_option">Features</li>
+    <li class="li_haeder_responsive">Team</li>
+    <li class="li_haeder_responsive" id="nav_bar_bottom_option">Sign In</li>
+  </ul>
+  
+
+  <main>
+    <div class="top_part_page">
+      <img src="./images/illustration-intro.png" loading="lazy" class="illustration-intro-image">
+      <h1>All your files in one secure location, accessible anywhere.</h1>
+      <p>Fylo stores all your most important files in one secure location. Access them wherever 
+        you need, share and collaborate with friends family, and co-workers.</p>
+      
+      <button class="Get_started">Get Started</button>
+    </div>
+
+
+    <div class="second_part_page">
+      <section class="offers_icons">
+
+        <div class="top_section_offer">
+
+          <aside class="offer">
+            <img src="./images/icon-access-anywhere.svg" loading="lazy" class="image_access_any_file_collaboration">
+            <h2>Access your files, anywhere</h2>
+            <p class="access_p">The ability to use a smartphone, tablet, or computer to access your account means your 
+              files follow you everywhere.</p>
+          </aside>
+          <aside class="offer">
+            <img src="./images/icon-security.svg" loading="lazy" class="any_file_and_security_images">
+            <h2>Security you can trust</h2>
+            <p class="security_p">2-factor authentication and user-controlled encryption are just a couple of the security 
+              features we allow to help secure your files.</p>
+          </aside>
+
+        </div>
+
+
+        <div class="bottom_section_offer">
+
+          <aside class="offer">
+            <img src="./images/icon-collaboration.svg" loading="lazy" class="image_access_any_file_collaboration">
+            <h2>Real-time collaboration</h2>
+            <p class="collaboration_p">Securely share files and folders with friends, family and colleagues for live collaboration. 
+              No email attachments required.</p>
+          </aside>
+
+          <aside class="offer">
+            <img src="./images/icon-any-file.svg" loading="lazy" class="any_file_and_security_images" style="width: 91px; height: 62px;">
+            <h2>Store any type of file</h2>
+            <p class="store_files_p">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+              file types to be securely stored and shared.</p>
+          </aside>
+
+        </div>
+      </section>
+
+      <section class="stay_prudactive">
+        <img alt="stay prudactive" class="stay_prudactive_image" loading="lazy" src="./images/illustration-stay-productive.png">
+        <div class="stay_prudactive_text">
+          <h1>Stay productive, wherever you are</h1>
+          <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+            storage needs.</p>
+            <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+              attachments required.</p>
+              <a href="#" class="see_how_a"><label id="label_a">See how Fylo works</label><img alt="arrow" src="./images/icon-arrow.svg"></a>
+        </div>
+      </section>
+
+      <section class="section_quats">
+        <div class="qoute_cars" id="qoute_first" style="z-index: 5;">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+            <aside class="profile_and_name"> 
+              <img src="./images/profile-1.jpg" loading="lazy" style="height: 24px; width: 24px; border-radius: 50%;">
+              <div class="name_and_job">
+                <p id="name">Satish Patel</p>
+                <p id="job">Founder & CEO, Huddle</p>
+              </div>
+            </aside>
+        </div>
+        <div class="qoute_cars" id="qoute_second">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+            <aside class="profile_and_name"> 
+              <img src="./images/profile-2.jpg" loading="lazy" style="height: 24px; width: 24px; border-radius: 50%;">
+              <div class="name_and_job">
+                <p id="name">Bruce McKenzie</p>
+                <p id="job">Founder & CEO, Huddle</p>
+              </div>
+            </aside>
+        </div>
+        <div class="qoute_cars" id="qoute_third">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+            <aside class="profile_and_name"> 
+              <img src="./images/profile-3.jpg" loading="lazy" style="height: 24px; width: 24px; border-radius: 50%;">
+              <div class="name_and_job">
+                <p id="name">Iva Boyd</p>
+                <p id="job">Founder & CEO, Huddle</p>
+              </div>
+            </aside>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      
+      <section class="early_access" id="email_requast">
+        <h1>Get early access today</h1>
+        <p id="early_access_p">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+          questions, our support team would be happy to help you.</p>
+          <form class="input_email_and_button">
+            <input type="email" placeholder="email@example.com" class="input_email"></input>
+            <button class="get_started_for_free" type="submit">Get Started For Free</button>
+          </form>
+      </section>
+
+
+
+      <section class="footer_contact_section">
+        <a href="#"><img src="./images/logo.svg" id="footer_logo" alt="Fylo logo" style="width: 165px; cursor: pointer;" loading="lazy"></a>
+        <ul class="footer_contact_text ul_footer">
+          <ul class="location ul_footer">
+            <img src="./images/icon-location.svg" alt="location" loading="lazy">
+            <p id="p_location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+              dolore magna aliqua</p>
+          </ul>
+
+          <ul class="email_phone_number ul_footer">
+            <label class="phone_flex_email"><img src="./images/icon-phone.svg" alt="phone number" loading="lazy" class="image_phone_email">+1-543-123-4567</label>
+            <label class="phone_flex_email"><img src="./images/icon-email.svg" alt="email address" loading="lazy" class="image_phone_email">example@fylo.com</label>
+          </ul>
+          <ul class="about_us ul_footer">
+            <a class="footer_fontweight_hover">About Us</a>
+            <a class="footer_fontweight_hover">Jobs</a>
+            <a class="footer_fontweight_hover">Press</a>
+            <a class="footer_fontweight_hover">Blog</a>
+          </ul>
+          <ul class="terms_policy ul_footer">
+            <a class="footer_fontweight_hover">Contact Us</a>
+            <a class="footer_fontweight_hover">Terms</a>
+            <a class="footer_fontweight_hover">Privacy</a>
+          </ul>
+          <ul class="social_media ul_footer">
+            <a class="social_media_a"><div class="icon"><i class="fa-brands fa-facebook-f"></i></div></a>
+            <a class="social_media_a"><div class="icon"><i class="fa-brands fa-twitter"></i></div></a>
+            <a class="social_media_a"><div class="icon"><i class="fa-brands fa-instagram"></i></div></a>
+          </ul>
+        </ul>
+      </section>
+    </footer>
+  </main>
+
+  <div class="frontEnd_mentor">
+    <p class="attribution" style="    font-size: 14px; color: white; font-family: 'Open Sans', sans-serif;">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/sm7654">Sm7654</a>.
+    </p>
+  </div>
+
+
+<script>
+  function bar_clicked() {
+  var x = document.getElementById("ul_responsive");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
